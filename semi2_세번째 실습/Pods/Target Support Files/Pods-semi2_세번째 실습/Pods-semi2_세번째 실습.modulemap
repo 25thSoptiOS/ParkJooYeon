@@ -1,6 +1,0 @@
-framework module Pods_semi2_______________ {
-  umbrella header "Pods-semi2_세번째 실습-umbrella.h"
-
-  export *
-  module * { export * }
-}
