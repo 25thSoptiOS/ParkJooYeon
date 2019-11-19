@@ -8,13 +8,20 @@
 
 import UIKit
 
-@IBDesignable
-class AddButton: UIButton {
-    
-    @IBInspectable var cornerRadius: CGFloat = 0{
-        didSet{
-            self.layer.cornerRadius = cornerRadius
-        }
+//@IBDesignable
+//class AddButton: UIButton {
+//
+//    @IBInspectable var cornerRadius: CGFloat = 0{
+//        didSet{
+//            self.layer.cornerRadius = cornerRadius
+//        }
+//    }
+//}
+
+extension UIView {
+    func makeRoundee() {
+        self.layer.cornerRadius = self.frame.width / 2
+        self.clipsToBounds = true
     }
 }
     

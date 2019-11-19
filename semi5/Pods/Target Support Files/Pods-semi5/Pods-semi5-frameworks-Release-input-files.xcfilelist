@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-semi5/Pods-semi5-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AutoInsetter/AutoInsetter.framework
+${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework
+${BUILT_PRODUCTS_DIR}/Tabman/Tabman.framework
