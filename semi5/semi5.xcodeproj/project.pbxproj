@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F26A29B2385795E00596729 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26A29A2385795E00596729 /* CustomCollectionViewCell.swift */; };
+		7F26A29E2385AA7700596729 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26A29D2385AA7700596729 /* PostViewController.swift */; };
 		7FDC187B2383FCE300DFC317 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC187A2383FCE300DFC317 /* UIFont+Extension.swift */; };
 		7FE01B5523838DB10073302A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE01B5423838DB10073302A /* AppDelegate.swift */; };
 		7FE01B5723838DB10073302A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE01B5623838DB10073302A /* SceneDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		315ACB07C98F7ADC9ADC879F /* Pods-semi5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-semi5.debug.xcconfig"; path = "Target Support Files/Pods-semi5/Pods-semi5.debug.xcconfig"; sourceTree = "<group>"; };
 		40FE2C769599A4F1D9826F08 /* Pods-semi5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-semi5.release.xcconfig"; path = "Target Support Files/Pods-semi5/Pods-semi5.release.xcconfig"; sourceTree = "<group>"; };
+		7F26A29A2385795E00596729 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		7F26A29D2385AA7700596729 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		7FDC187A2383FCE300DFC317 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIFont+Extension.swift"; path = "semi5/Sources/Extensions/UIFont+Extension.swift"; sourceTree = SOURCE_ROOT; };
 		7FE01B5123838DB10073302A /* semi5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = semi5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE01B5423838DB10073302A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,8 +62,24 @@
 				315ACB07C98F7ADC9ADC879F /* Pods-semi5.debug.xcconfig */,
 				40FE2C769599A4F1D9826F08 /* Pods-semi5.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7F26A2992385794300596729 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				7F26A29A2385795E00596729 /* CustomCollectionViewCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		7F26A29C2385AA5C00596729 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7FE01B5823838DB10073302A /* ViewController.swift */,
+				7F26A29D2385AA7700596729 /* PostViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		7FDC187C2383FCF100DFC317 /* Extensions */ = {
@@ -120,9 +140,10 @@
 		7FE01B6B23838F2D0073302A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				7F26A29C2385AA5C00596729 /* ViewController */,
+				7F26A2992385794300596729 /* CollectionView */,
 				7FDC187C2383FCF100DFC317 /* Extensions */,
 				7FE01B5623838DB10073302A /* SceneDelegate.swift */,
-				7FE01B5823838DB10073302A /* ViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -242,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F26A29E2385AA7700596729 /* PostViewController.swift in Sources */,
 				7FE01B5923838DB10073302A /* ViewController.swift in Sources */,
+				7F26A29B2385795E00596729 /* CustomCollectionViewCell.swift in Sources */,
 				7FE01B5523838DB10073302A /* AppDelegate.swift in Sources */,
 				7FDC187B2383FCE300DFC317 /* UIFont+Extension.swift in Sources */,
 				7FE01B5723838DB10073302A /* SceneDelegate.swift in Sources */,
