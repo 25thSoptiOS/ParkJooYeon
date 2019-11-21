@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7F26A29B2385795E00596729 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26A29A2385795E00596729 /* CustomCollectionViewCell.swift */; };
 		7F26A29E2385AA7700596729 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26A29D2385AA7700596729 /* PostViewController.swift */; };
+		7F26A2A02385B01700596729 /* customDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26A29F2385B01700596729 /* customDataSource.swift */; };
 		7FDC187B2383FCE300DFC317 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC187A2383FCE300DFC317 /* UIFont+Extension.swift */; };
 		7FE01B5523838DB10073302A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE01B5423838DB10073302A /* AppDelegate.swift */; };
 		7FE01B5723838DB10073302A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE01B5623838DB10073302A /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 		40FE2C769599A4F1D9826F08 /* Pods-semi5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-semi5.release.xcconfig"; path = "Target Support Files/Pods-semi5/Pods-semi5.release.xcconfig"; sourceTree = "<group>"; };
 		7F26A29A2385795E00596729 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		7F26A29D2385AA7700596729 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		7F26A29F2385B01700596729 /* customDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customDataSource.swift; sourceTree = "<group>"; };
 		7FDC187A2383FCE300DFC317 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIFont+Extension.swift"; path = "semi5/Sources/Extensions/UIFont+Extension.swift"; sourceTree = SOURCE_ROOT; };
 		7FE01B5123838DB10073302A /* semi5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = semi5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE01B5423838DB10073302A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				7F26A2992385794300596729 /* CollectionView */,
 				7FDC187C2383FCF100DFC317 /* Extensions */,
 				7FE01B5623838DB10073302A /* SceneDelegate.swift */,
+				7F26A29F2385B01700596729 /* customDataSource.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				7FE01B5523838DB10073302A /* AppDelegate.swift in Sources */,
 				7FDC187B2383FCE300DFC317 /* UIFont+Extension.swift in Sources */,
 				7FE01B5723838DB10073302A /* SceneDelegate.swift in Sources */,
+				7F26A2A02385B01700596729 /* customDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,5 +12,4 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var mainContentLabel: UILabel!
     @IBOutlet weak var secretLabel: UILabel!
-    
 }
