@@ -12,4 +12,10 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var mainContentLabel: UILabel!
     @IBOutlet weak var secretLabel: UILabel!
+    @IBOutlet weak var anonymousNameLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var likeImage: UIImageView!
+    @IBOutlet weak var likeCountLabel: UILabel!
+    @IBOutlet weak var replyImage: UIImageView!
+    @IBOutlet weak var replyCountLabel: UILabel!
 }

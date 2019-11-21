@@ -38,7 +38,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width - 50, height: collectionView.frame.height)
+        return CGSize(width: collectionView.frame.width - 60, height: collectionView.frame.height)
     }
 }
 
