@@ -84,8 +84,8 @@
 			children = (
 				7F632242236D41800056FB56 /* NetworkResult.swift */,
 				7F63224A236D45000056FB56 /* LoginService.swift */,
-				7F632244236D42420056FB56 /* APIConstants.swift */,
 				7F632246236D43410056FB56 /* ResponseString.swift */,
+				7F632244236D42420056FB56 /* APIConstants.swift */,
 				7FF53512236D5EE200527B42 /* SignupService.swift */,
 				7FF53514236D66E800527B42 /* Response.swift */,
 			);
