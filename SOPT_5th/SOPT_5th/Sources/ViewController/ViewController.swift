@@ -15,18 +15,42 @@ class ViewController: UIViewController {
     @IBOutlet weak var userWritePostNumLabel: UILabel!
     @IBOutlet weak var userCommentNumLabel: UILabel!
     @IBOutlet weak var userScrapNumLabel: UILabel!
+    @IBOutlet weak var userImageNumLabel: UIImageView!
+    
     @IBOutlet weak var realTimeCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         realTimeCollectionView.dataSource = self
         
-        UserInforamtion.shared.userinfo{
-            data.in
-            
+        UserInformation.shared.userinfo{
+            data in
+
             switch data{
             case.success(let object):
+                let realData = object as! ResponseStringUserInfo
                 
+                self.userNameLabel.text = realData.data.userName
+                self.userUniversityLabel.text = realData.data.userUniv
+                self.userWritePostNumLabel.text = String(realData.data.postingCount)
+                self.userCommentNumLabel.text = String (realData.data.commentCount)
+                self.userScrapNumLabel.text = String (realData.data.scrapCount)
+                
+                guard let imageURL = URL(string: realData.data.userImage) else {return}
+                do{
+                    let imgData = try Data(contentsOf: imageURL)
+                    self.userImageNumLabel.image = UIImage(data: imgData)
+                }
+                catch{
+                    print("err")
+                }
+                
+            case.networkFail:
+                return
+                
+            default:
+                return
+            
             }
         }
         
@@ -68,9 +92,13 @@ extension ViewController: UICollectionViewDataSource{
             return cell
         }
         
+        //var dataSet = [BoardPopular.DataClass]()
+        
         return UICollectionViewCell()
         
     }
+    
+    
     
     
 }

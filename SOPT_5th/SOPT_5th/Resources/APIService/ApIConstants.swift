@@ -15,5 +15,6 @@ struct APIConstants {
     static let UserInfoURL = BaseURL + "/userinfo" // 유저정보
     //static let SignupURL = BaseURL + "/signup" // 회원가입
     
-    /* 게시판 (Content) */
+    /* 실시간 인기글 (BoardPopular) */
+    static let BoardPopularURL = BaseURL + "/boardpopular"
 }

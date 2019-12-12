@@ -13,20 +13,20 @@ struct ResponseStringBoardPopular: Codable {
     let success: Bool
     let message: String
     let data: [BoardPopular]
-}
+    
+    struct BoardPopular: Codable {
+        let boardCategory, boardID, boardContent: String
+        let boardLikeCount, boardCommentCount: Int
+        let boardDate: String
 
-// MARK: - Datum
-struct BoardPopular: Codable {
-    let boardCategory, boardID, boardContent: String
-    let boardLikeCount, boardCommentCount: Int
-    let boardDate: String
-
-    enum CodingKeys: String, CodingKey {
-        case boardCategory = "board_category"
-        case boardID = "board_id"
-        case boardContent = "board_content"
-        case boardLikeCount = "board_like_count"
-        case boardCommentCount = "board_comment_count"
-        case boardDate = "board_date"
+        enum CodingKeys: String, CodingKey {
+            case boardCategory = "board_category"
+            case boardID = "board_id"
+            case boardContent = "board_content"
+            case boardLikeCount = "board_like_count"
+            case boardCommentCount = "board_comment_count"
+            case boardDate = "board_date"
+        }
     }
+
 }
