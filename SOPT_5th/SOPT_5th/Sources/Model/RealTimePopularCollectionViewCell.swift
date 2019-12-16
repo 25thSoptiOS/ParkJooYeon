@@ -16,3 +16,4 @@ class RealTimePopularCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var goodNumLabel: UILabel!
     @IBOutlet weak var commentNumLabel: UILabel!
 }
+
